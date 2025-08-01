@@ -1,0 +1,57 @@
+.filme {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .topo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .titulo {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .quadradinho {
+      border: 2px solid black;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      text-align: center;
+      line-height: 20px;
+      cursor: pointer;
+      user-select: none;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+
+    .review {
+      display: none;
+      margin-top: 10px;
+      font-style: italic;
+      font-size: 0.9em;
+      padding-left: 20px;
+      white-space: pre-line;
+    }
+
+    .filme.ativa .letra {
+      display: block;
+    }
+
+  button {
+    margin-top: 10px;
+    border: none;
+    font-size: 20px;
+  }
+
+  #tempo-restante {
+    font-size: 20px;
+  }
+
+  #filme-restante {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
