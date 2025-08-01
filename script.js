@@ -38,7 +38,6 @@ const temposFilmes = {
   "The Fantastic Four: First Steps": 115
 };
 
-// Marcar/desmarcar e salvar no localStorage
 function marcarQuadradinho(filme) {
   const quadradinho = filme.querySelector(".quadradinho");
   const nome = filme.dataset.nome;
@@ -60,7 +59,6 @@ function marcarQuadradinho(filme) {
   filmeRestante();
 }
 
-// Atualizar o texto do tempo restante
 function atualizarTempoRestante() {
   const progresso = JSON.parse(localStorage.getItem("filmesAssistidos") || "{}");
   let restante = 0;
@@ -94,7 +92,6 @@ function filmeRestante() {
   }
 }
 
-// Restaurar estado salvo
 function carregarEstados() {
   const progresso = JSON.parse(localStorage.getItem("filmesAssistidos") || "{}");
 
@@ -114,20 +111,18 @@ function carregarEstados() {
   atualizarTempoRestante();
 }
 
-// Mostrar ou esconder review
 function mostrarReview(id) {
   const review = document.getElementById(id);
   review.style.display = review.style.display === "block" ? "none" : "block";
 }
 
-// Iniciar
 carregarEstados();
 filmeRestante();
 
 
 function mostrarLog() {
   const progresso = JSON.parse(localStorage.getItem("filmesAssistidos")) || {};
-  let log = "🎬 Filmes assistidos:\n\n";
+  let log = "Filmes assistidos:\n\n";
   let encontrou = false;
 
   for (const nome in progresso) {
