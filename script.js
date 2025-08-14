@@ -73,7 +73,7 @@ function atualizarTempoRestante() {
   restanteH = restante / 60; 
 
   const div = document.getElementById("tempo-restante");
-  div.textContent = `⏳ Faltam ${restante} minutos ou ${restanteH.toFixed(1)} horas de filmes`;
+  div.textContent = `Faltam ${restante} minutos ou ${restanteH.toFixed(1)} horas de filmes`;
 }
 
 function filmeRestante() {
@@ -138,3 +138,4 @@ function mostrarLog() {
 
   alert(log);
 }
+
